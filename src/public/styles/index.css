@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{    
+    font-family: 'Baloo Thambi 2', cursive;    
+    color: rgb(43, 51, 52);
+}
+
+/* ==================================================== */
+/* navbar css */
+/* ==================================================== */
+
+nav{
+    height: 11vh;
+    background-color: #A0D2DB;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 5px rgb(223, 231, 232);
+}
+
+#nav-links{
+    display: flex;
+    list-style: none;
+    width: 90%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+#nav-links li a{
+    color: white;
+    font-size: 23px;
+    text-decoration: none;    
+    text-transform: uppercase;
+    text-shadow: 1px 2px rgb(203, 201, 202);
+}
+
+.fa-paw{
+    color: white;
+    font-size: 60px;
+    margin-right: 40px;    
+}
+
+#nav-links li a:hover{ 
+    transform: scale(1.1);
+    color: rgb(58, 88, 92);
+}
+
+.fa-paw:hover{    
+    transform: scale(1.1); 
+}
+
+/* ==================================================== */
+/* navbar css end*/
+/* ==================================================== */
+
+
+
+/* ==================================================== */
+/* content css*/
+/* ==================================================== */
+
+
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+label{
+    font-weight: bold;
+}
+
+#landing-img{
+    width: 630px;
+    float: left;
+    box-shadow: 0px 0px 3px 1px grey;    
+    margin-right: 15px;
+}
+
+.container{                                                             
+    width: 75vw;
+    margin: 80px auto;
+}
+
+.row{
+    height: 90vh;
+    margin-bottom: 100px;
+}
+
+#main-phrase{    
+   font-size: 80px;
+   text-transform: uppercase; 
+}
+
+.btn{
+    width: 34%;
+    height: 50px;
+    margin-top: 8px;
+    font-size: 25px;
+    border: none;
+    background-color:  #A0D2DB;
+    color: white;
+    box-shadow: 3px 2px rgb(203, 201, 202);
+}
+
+.btn:hover{    
+    box-shadow: 4px 3px rgb(203, 201, 202);
+}
+
+.facts-ul{
+    font-size: 25px;
+    margin: 40px auto;
+}
+
+.cat-img-container{  
+    display: flex;
+    justify-content: space-between;
+}
+
+.random-cat-img{
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;    
+}
+
+#cat-img-btn{
+    margin: 60px auto;
+    display: block;    
+}
+
+.contact-form-container{
+    width: 40vw;
+    min-width: 500px;
+    height: 92vh;
+    position: relative;
+    max-width: 700px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(203, 201, 202);
+    background-color: white;    
+    margin-left: 20px;  
+}
+
+.form-group{    
+    margin: 14px 10px;    
+    border-radius: 5px;
+    text-align: left;
+    color: black;
+}
+
+.form-group input{
+    height: 25px;
+    width: 260px; 
+}
+
+
+.about-container{
+    width: 85%;  
+    margin: 30px auto;
+    box-shadow: 0 0 20px rgb(203, 201, 202);
+    padding: 30px 80px;
+}
+
+.advantages-container{
+    padding: 30px auto;
+    margin: 30px auto;
+    display: flex;
+}
+
+.advantages-container ul li{
+    list-style: none;
+    font-size: 1.35em;
+    margin-bottom: 32px;
+}
+
+.advantages-container ul li i{
+    margin: auto 5px;
+    font-size: 30px;
+}
+
+.work-with-us-img{
+    width: 400px;
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.title{
+    margin: 40px auto;
+}
+
+textarea{
+    width: 400px;
+}
+
+#contact-us{
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0, 0, 0, 0.35)), url("https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: auto;    
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;      
+}
+
+
+/* ==================================================== */
+/* content css end*/
+/* ==================================================== */
+
+
+/* ==================================================== */
+/* Responsible css*/
+/* ==================================================== */
+
+/* resizing for 900px window*/
+@media screen and (max-width: 990px){
+
+    #nav-links li a{      
+        font-size: 17px;
+    }
+
+    .facts-ul{
+        font-size: 18px;
+        margin: 30px auto;
+    }
+
+    #facts{
+        margin-bottom: 160px;
+    }
+
+    .container{
+        width: 70vw;
+        margin: 80px auto;
+    }
+
+    #main-phrase{
+        text-transform: uppercase; 
+        display: inline-block;
+    }        
+
+    #landing-img{
+        width: 90%;
+        float: left;
+    }    
+
+    .advantages-container{
+        margin: 50px auto;
+        display: grid;
+    }
+
+    .work-with-us-img{
+        width: 70vw;
+        height: 70vh;
+        margin: auto auto;
+    }
+    
+    .cat-img-container{
+        display: grid;
+    }
+
+}
+
+/* resizing for 650px window*/
+@media screen and (max-width: 650px){
+
+    #main-phrase{
+        font-size: 40px;
+    }      
+
+    nav{
+        position: relative;
+    }
+
+    .hamburguer{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    #nav-links{
+        position: fixed;
+        background: #A0D2DB;
+        height: 100vh;
+        width: 100vh;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -15%);
+        -webkit-clip-path: circle(100px at 90% -15%);
+        transition: all 0.5s ease-out;
+        pointer-events: none;
+    }
+
+    #nav-links.open{        
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    #nav-links li a{      
+        font-size: 30px;
+    }
+}
+
+
+
+
+

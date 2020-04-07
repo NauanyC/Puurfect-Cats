@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cat-chy you</title>
+
+    <!-- text font cdn -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- logo -->
+    <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/android/24/000000/black-cat.png"> 
+
+    <!-- index css -->
+    <link rel="stylesheet" href="./public/styles/index.css">
+</head>
+<body>
+
+    <!-- main navbar -->
+    <nav>
+        <div class="hamburguer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>                
+        <ul id="nav-links">
+            <li><a href="#landing"><i class="fa fa-paw"></i></a></li>
+            <li><a href="#facts"><i class="fa fa-edit"></i>Facts</a></li>
+            <li><a href="#random-cats"><i class="fa fa-heart"></i> Chomky cats</a></li>
+            <li><a href="#about">About <i class="fa fa-question"></i></a></li>
+            <li><a href="#contact-us"><i class="fa fa-envelope"></i> Psss pss</a></li>
+            <li><a href="#work-with-us"><i class="fa fa-globe"></i> Work with us</a></li>
+        </ul>        
+    </nav>
+  
+    <!-- cat image -->
+    <div class="container">
+
+        <!-- landing section -->
+        <div id="landing" class="row">
+            <a name='landing'></a>
+            <!-- cat image -->       
+            <img id="landing-img" src="./public/images/Cat.jpg" alt="">
+            <!-- cat appreciation phrase -->
+            <h1 id="main-phrase">You love <span>cats!</span><h1>
+            <button class="btn">Know why</button>
+        </div>     
+
+        <!-- cool cat facts sectton -->
+        <div id="facts" class="row">
+            <div>
+                <hr>
+                <h1 class="title">Very important cat facts</h1>
+                <div class="cat-facts-container""> 
+                    <ul class="facts-ul">
+
+                    </ul>                   
+                </div>
+            </div>
+        </div>    
+        <hr>
+        <!-- cuttest random cats section -->
+        <div id="random-cats" class="row">
+            <h1>See some random, cute cats!</h1>
+            <div class="cat-img-container">
+                <img class="random-cat-img" src="" alt="">
+                <img class="random-cat-img" src="" alt="">
+                <img class="random-cat-img" src="" alt="">
+            </div>   
+            <button class="btn" id="cat-img-btn" onclick="getImage()">More cats!</button>
+        
+        </div>
+        <hr>
+        <!-- about the page -->
+        <div id="about" class="row">
+            <div class="about-container">
+                <div>
+                    <h1>About us</h1>
+                    <h2>Burmese</h2>
+                    <p>
+                       Cat ipsum dolor sit amet, ragdoll or scottish fold but burmese so ocelot. Panther abyssinian . Cornish rex. Tabby jaguar himalayan american bobtail so american bobtail. Burmese kitten or bobcat, tom and tabby. Cougar scottish fold, or leopard leopard panther. American bobtail. Cheetah. 
+                    </p>
+                    <p>
+                       Cheetah american shorthair cougar. Lion. Ocicat himalayan for american bobtail jaguar. Jaguar lion, panther so cheetah so american bobtail. Cougar tom. Himalayan jaguar egyptian mau manx devonshire rex, jaguar. 
+                    </p>
+                    <p>
+                       Munchkin bobcat so jaguar. Bobcat maine coon but norwegian forest yet american shorthair american shorthair maine coon. Grimalkin. Siamese scottish fold but cornish rex ragdoll or ocelot egyptian mau jaguar.
+                    </p>
+                    <p>
+                       Munchkin bobcat egyptian mau singapura. Puma russian blue grimalkin abyssinian tom. Thai ragdoll and savannah, savannah, so thai persian mouser. Cheetah siamese yet russian blue american shorthair tomcat so jaguar. Munchkin birman russian blue persian, for abyssinian or puma ocelot. Havana brown bengal. Savannah cheetah egyptian mau british shorthair so donskoy. Bengal ocelot, cheetah but munchkin but ocicat.
+                   </p>
+                </div>  
+            </div>                   
+        </div>
+        <hr>
+        <!-- contact section -->
+        <div id="contact-us" class="row">            
+            <div class="contact-form-container">    
+                <h1>Contact us</h1>            
+                   <form class="contact-form" action="">
+                       <div class="form-group">
+                           <label for="name">Name:</label>
+                        <input type="text" name="name" placeholder="Type your name">
+                     </div>
+                    <div class="form-group">
+                           <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Type your email">
+                      </div>
+                     <div class="form-group">
+                        <label for="phone">Phone: </label>
+                        <input type="text" placeholder="Type your phone">
+                       </div>
+                    <div class="form-group">
+                          <label for="message">Message</label>
+                        <textarea name="message" cols="30" rows="8" placeholder="Send us a message!"></textarea>
+                      </div>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>                             
+        </div>
+        <hr>
+        <!-- work with us section -->
+        <div id="work-with-us" class="row">   
+            <div>
+                <h1 class="title">The advantages of becoming a slave...</h1>
+                <div class="advantages-container">
+                    <ul>
+                        <li>
+                            <i class="fa fa-heart"></i>
+
+                            We, cats, are better for the enviroment than the moron dogs, like, really! Search it.
+                        </li>
+                        <li>
+                            <i class="fa fa-heart"></i>
+                            We also are super duper cute, as you can see above.
+                        </li>
+                        <li>
+                            <i class="fa fa-heart"></i>
+                           We'll make you smarter and also improve your heart.
+                        </li>
+                        <li>
+                            <i class="fa fa-heart"></i>
+                           Have I told you already that we're cute?
+                        </li>
+                        <li>
+                            <i class="fa fa-heart"></i>
+                            You won't have money for snacks cause you'll need to buy ours, so you'll get slimmer. 
+                        </li>
+                        <li>
+                            <i class="fa fa-heart"></i>
+                            And much more advantages, just be our slave already.
+                        </li>
+                    </ul>
+                    <img class="work-with-us-img" src="./public/images/gato 3.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>      
+    
+
+    <!-- scripts -->
+    <script src="scripts/app.js"></script>
+</body>
+</html>
