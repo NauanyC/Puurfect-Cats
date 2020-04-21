@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,139 +20,149 @@
 </head>
 <body>
 
-    <!-- main navbar -->
-    <nav>
-        <div class="hamburguer">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>                
-        <ul id="nav-links">
-            <li><a href="#landing"><i class="fa fa-paw"></i></a></li>
-            <li><a href="#facts"><i class="fa fa-edit"></i>Facts</a></li>
-            <li><a href="#random-cats"><i class="fa fa-heart"></i> Chomky cats</a></li>
-            <li><a href="#about">About <i class="fa fa-question"></i></a></li>
-            <li><a href="#contact-us"><i class="fa fa-envelope"></i> Psss pss</a></li>
-            <li><a href="#work-with-us"><i class="fa fa-globe"></i> Work with us</a></li>
-        </ul>        
-    </nav>
-  
-    <!-- cat image -->
+    <!-- navbar -->  
+    <header>
+        <nav>
+            <div class="hamburguer">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#landing"><i class="fa fa-paw"></i></a></li>
+                <li><a href="#facts"><i class="fa fa-edit"></i>Facts</a></li>
+                <li><a href="#random-cats"><i class="fa fa-heart"></i> Chomky cats</a></li>
+                <li><a href="#about"><i class="fa fa-question"></i> About</a></li>
+                <li><a href="#contact-us"><i class="fa fa-envelope"></i> Psss pss</a></li>
+                <li><a href="#work-with-us"><i class="fa fa-globe"></i> Work with us</a></li>
+            </ul>
+        </nav>
+    </header> 
+    
+    <!-- page's container -->
     <div class="container">
 
         <!-- landing section -->
-        <div id="landing" class="row">
-            <a name='landing'></a>
-            <!-- cat image -->       
-            <img id="landing-img" src="./public/images/Cat.jpg" alt="">
-            <!-- cat appreciation phrase -->
-            <h1 id="main-phrase">You love <span>cats!</span><h1>
-            <button class="btn">Know why</button>
-        </div>     
-
+        <div id="landing" class="landing-row">
+            <img src="./public/images/landing-background.jpg" alt="">
+            <div>                
+                <h1>You love <span>cats!</span><h1>
+                <button class="btn"><a href="https://gatinhobranco.com/onde-adotar-lista/">Know why</a></button>
+            </div>
+        </div>    
+        
+        
         <!-- cool cat facts sectton -->
-        <div id="facts" class="row">
+        <div id="facts" class="facts-row">
             <div>
                 <hr>
                 <h1 class="title">Very important cat facts</h1>
                 <div class="cat-facts-container""> 
                     <ul class="facts-ul">
-
+                       
                     </ul>                   
                 </div>
             </div>
         </div>    
+
         <hr>
+
         <!-- cuttest random cats section -->
-        <div id="random-cats" class="row">
-            <h1>See some random, cute cats!</h1>
-            <div class="cat-img-container">
-                <img class="random-cat-img" src="" alt="">
-                <img class="random-cat-img" src="" alt="">
-                <img class="random-cat-img" src="" alt="">
+        <div id="random-cats" class="images-row">
+            <h1 class="title">Random cute cats!</h1>
+            <div class="cat-container">            
             </div>   
-            <button class="btn" id="cat-img-btn" onclick="getImage()">More cats!</button>
-        
+            <button class="btn" id="cat-img-btn">More cats!</button>        
         </div>
+
         <hr>
+
         <!-- about the page -->
-        <div id="about" class="row">
+        <div id="about" class="about-row">            
             <div class="about-container">
-                <div>
-                    <h1>About us</h1>
-                    <h2>Burmese</h2>
+                <h1 class="title">About us</h1>
+                <div>    
                     <p>
-                       Cat ipsum dolor sit amet, ragdoll or scottish fold but burmese so ocelot. Panther abyssinian . Cornish rex. Tabby jaguar himalayan american bobtail so american bobtail. Burmese kitten or bobcat, tom and tabby. Cougar scottish fold, or leopard leopard panther. American bobtail. Cheetah. 
+                    Cat ipsum dolor sit amet, ragdoll or scottish fold but burmese so ocelot. Panther abyssinian . Cornish rex. Tabby jaguar himalayan american bobtail so american bobtail. Burmese kitten or bobcat, tom and tabby. Cougar scottish fold, or leopard leopard panther. American bobtail. Cheetah. 
                     </p>
                     <p>
-                       Cheetah american shorthair cougar. Lion. Ocicat himalayan for american bobtail jaguar. Jaguar lion, panther so cheetah so american bobtail. Cougar tom. Himalayan jaguar egyptian mau manx devonshire rex, jaguar. 
+                    Cheetah american shorthair cougar. Lion. Ocicat himalayan for american bobtail jaguar. Jaguar lion, panther so cheetah so american bobtail. Cougar tom. Himalayan jaguar egyptian mau manx devonshire rex, jaguar. 
                     </p>
                     <p>
-                       Munchkin bobcat so jaguar. Bobcat maine coon but norwegian forest yet american shorthair american shorthair maine coon. Grimalkin. Siamese scottish fold but cornish rex ragdoll or ocelot egyptian mau jaguar.
+                    Munchkin bobcat so jaguar. Bobcat maine coon but norwegian forest yet american shorthair american shorthair maine coon. Grimalkin. Siamese scottish fold but cornish rex ragdoll or ocelot egyptian mau jaguar.
                     </p>
                     <p>
-                       Munchkin bobcat egyptian mau singapura. Puma russian blue grimalkin abyssinian tom. Thai ragdoll and savannah, savannah, so thai persian mouser. Cheetah siamese yet russian blue american shorthair tomcat so jaguar. Munchkin birman russian blue persian, for abyssinian or puma ocelot. Havana brown bengal. Savannah cheetah egyptian mau british shorthair so donskoy. Bengal ocelot, cheetah but munchkin but ocicat.
-                   </p>
+                    Munchkin bobcat egyptian mau singapura. Puma russian blue grimalkin abyssinian tom. Thai ragdoll and savannah, savannah, so thai persian mouser. Cheetah siamese yet russian blue american shorthair tomcat so jaguar. Munchkin birman russian blue persian, for abyssinian or puma ocelot. Havana brown bengal. Savannah cheetah egyptian mau british shorthair so donskoy. Bengal ocelot, cheetah but munchkin but ocicat.
+                    </p>
                 </div>  
             </div>                   
         </div>
+
         <hr>
+
         <!-- contact section -->
-        <div id="contact-us" class="row">            
-            <div class="contact-form-container">    
-                <h1>Contact us</h1>            
-                   <form class="contact-form" action="">
-                       <div class="form-group">
-                           <label for="name">Name:</label>
-                        <input type="text" name="name" placeholder="Type your name">
-                     </div>
-                    <div class="form-group">
-                           <label for="email">Email:</label>
-                        <input type="email" name="email" placeholder="Type your email">
-                      </div>
-                     <div class="form-group">
-                        <label for="phone">Phone: </label>
-                        <input type="text" placeholder="Type your phone">
-                       </div>
-                    <div class="form-group">
-                          <label for="message">Message</label>
-                        <textarea name="message" cols="30" rows="8" placeholder="Send us a message!"></textarea>
-                      </div>
-                    <button class="btn">Submit</button>
-                </form>
+        <div id="contact-us" class="contact-row">            
+            <div class="contact-container">    
+                <div class="form-container">
+                    <h1 class="title">Contact us</h1>    
+                    <!-- form -->
+                    <form class="contact-form" action="">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" placeholder="  Johny Joe Juju">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="  ilovecats@outlook.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone: </label>
+                            <input type="text" placeholder="  9-34438778">
+                        </div>                        
+
+                        <div class="form-group">
+                            <label for="phone">Favorite Cat: </label>
+                            <input type="text" placeholder="  Persian?">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" cols="30" rows="8" placeholder="  Send us a message!"></textarea>
+                        </div>
+
+                        <button class="btn">Submit</button>
+                    </form>
+                </div>                
             </div>                             
         </div>
+
         <hr>
+
         <!-- work with us section -->
-        <div id="work-with-us" class="row">   
+        <div id="work-with-us" class="advantages-row">   
             <div>
                 <h1 class="title">The advantages of becoming a slave...</h1>
                 <div class="advantages-container">
                     <ul>
                         <li>
-                            <i class="fa fa-heart"></i>
-
-                            We, cats, are better for the enviroment than the moron dogs, like, really! Search it.
+                            <p><i class="fa fa-heart"></i> We, cats, are better for the enviroment than the moron dogs, like, really! Search it.</p>
                         </li>
                         <li>
-                            <i class="fa fa-heart"></i>
-                            We also are super duper cute, as you can see above.
+                            <p><i class="fa fa-heart"></i> We also are super duper cute, as you can see above.</p>
                         </li>
                         <li>
-                            <i class="fa fa-heart"></i>
-                           We'll make you smarter and also improve your heart.
+                            <p><i class="fa fa-heart"></i> We'll make you smarter and also improve your heart.</p>
                         </li>
                         <li>
-                            <i class="fa fa-heart"></i>
-                           Have I told you already that we're cute?
+                            <p><i class="fa fa-heart"></i> Have I told you already that we're cute?</p>
                         </li>
                         <li>
-                            <i class="fa fa-heart"></i>
-                            You won't have money for snacks cause you'll need to buy ours, so you'll get slimmer. 
+                            <p><i class="fa fa-heart"></i> You won't have money for snacks cause you'll need to buy ours, so you'll get slimmer.</p>  
                         </li>
                         <li>
-                            <i class="fa fa-heart"></i>
-                            And much more advantages, just be our slave already.
+                            <p><i class="fa fa-heart"></i> And much more advantages, just be our slave already.</p> 
                         </li>
                     </ul>
                     <img class="work-with-us-img" src="./public/images/gato 3.jpeg" alt="">
@@ -160,7 +171,14 @@
         </div>
     </div>      
     
-
+    <footer>
+        <p> Hello! My name is Nauany, I did this site to toy a little.</p>
+        <p> You can find me at: 
+            <a href="https://www.linkedin.com/in/nauany-costa/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/NauanyC"><i class="fa fa-github"></i></a>
+        </p>        
+    </footer>
+   
     <!-- scripts -->
     <script src="scripts/app.js"></script>
 </body>

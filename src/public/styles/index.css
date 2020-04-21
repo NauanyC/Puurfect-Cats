@@ -4,23 +4,31 @@
     box-sizing: border-box;
 }
 
-body{    
+body{
     font-family: 'Baloo Thambi 2', cursive;    
     color: rgb(43, 51, 52);
 }
 
-/* ==================================================== */
-/* navbar css */
-/* ==================================================== */
+header{
+    position: sticky;
+    top: 0;
+}
 
+hr{
+    background-image: linear-gradient(90deg, rgb(203, 201, 202), transparent);    
+    border: 0;
+    height: 2px;
+    margin: 40px;
+}
+
+/* navbar styling */
 nav{
-    height: 11vh;
-    background-color: #A0D2DB;
-    margin-bottom: 30px;
+    height: 10vh;
+    background-color: rgb(160, 212, 219);  
     box-shadow: 0px 0px 10px 5px rgb(223, 231, 232);
 }
 
-#nav-links{
+.nav-links{
     display: flex;
     list-style: none;
     width: 90%;
@@ -28,15 +36,17 @@ nav{
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
-    margin-right: 30px;
 }
 
-#nav-links li a{
+.nav-links li a{
     color: white;
-    font-size: 23px;
-    text-decoration: none;    
-    text-transform: uppercase;
-    text-shadow: 1px 2px rgb(203, 201, 202);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-links li a:hover{ 
+    transform: scale(1.1);
+    color: rgb(58, 88, 92);
 }
 
 .fa-paw{
@@ -45,277 +55,236 @@ nav{
     margin-right: 40px;    
 }
 
-#nav-links li a:hover{ 
-    transform: scale(1.1);
-    color: rgb(58, 88, 92);
-}
-
 .fa-paw:hover{    
     transform: scale(1.1); 
 }
 
-/* ==================================================== */
-/* navbar css end*/
-/* ==================================================== */
-
-
-
-/* ==================================================== */
-/* content css*/
-/* ==================================================== */
-
-
-h1{
-    font-size: 50px;
-    margin-bottom: 20px;
-    font-weight: 600;
+/* container styling */
+.container{
+    width: 90vw;
+    margin: 60px auto;
 }
 
-label{
-    font-weight: bold;
-}
-
-#landing-img{
-    width: 630px;
-    float: left;
-    box-shadow: 0px 0px 3px 1px grey;    
-    margin-right: 15px;
-}
-
-.container{                                                             
-    width: 75vw;
-    margin: 80px auto;
-}
-
-.row{
-    height: 90vh;
-    margin-bottom: 100px;
-}
-
-#main-phrase{    
-   font-size: 80px;
-   text-transform: uppercase; 
-}
-
+/* common itens styling */
 .btn{
-    width: 34%;
+    width: 170px;
     height: 50px;
-    margin-top: 8px;
     font-size: 25px;
     border: none;
-    background-color:  #A0D2DB;
+    background-color: rgb(160, 212, 219);
     color: white;
-    box-shadow: 3px 2px rgb(203, 201, 202);
-}
-
-.btn:hover{    
-    box-shadow: 4px 3px rgb(203, 201, 202);
-}
-
-.facts-ul{
-    font-size: 25px;
-    margin: 40px auto;
-}
-
-.cat-img-container{  
-    display: flex;
-    justify-content: space-between;
-}
-
-.random-cat-img{
-    width: 300px;
-    height: 300px;
-    margin-top: 20px;    
-}
-
-#cat-img-btn{
-    margin: 60px auto;
-    display: block;    
-}
-
-.contact-form-container{
-    width: 40vw;
-    min-width: 500px;
-    height: 92vh;
-    position: relative;
-    max-width: 700px;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgb(203, 201, 202);
-    background-color: white;    
-    margin-left: 20px;  
-}
-
-.form-group{    
-    margin: 14px 10px;    
-    border-radius: 5px;
-    text-align: left;
-    color: black;
-}
-
-.form-group input{
-    height: 25px;
-    width: 260px; 
-}
-
-
-.about-container{
-    width: 85%;  
-    margin: 30px auto;
-    box-shadow: 0 0 20px rgb(203, 201, 202);
-    padding: 30px 80px;
-}
-
-.advantages-container{
-    padding: 30px auto;
-    margin: 30px auto;
-    display: flex;
-}
-
-.advantages-container ul li{
-    list-style: none;
-    font-size: 1.35em;
-    margin-bottom: 32px;
-}
-
-.advantages-container ul li i{
-    margin: auto 5px;
-    font-size: 30px;
-}
-
-.work-with-us-img{
-    width: 400px;
-    height: 400px;
-    margin-left: 30px;
-    margin-top: 30px;
+    box-shadow: 3px 2px rgb(203, 201, 202);     
 }
 
 .title{
-    margin: 40px auto;
+    text-align: center;    
+    margin-top: 60px;
+    margin-bottom: 50px;
+    font-size: 50px;
 }
 
+.btn:hover{    
+    box-shadow: 2px 3px rgb(153, 151, 152);
+    background-color: rgb(150, 202, 209);
+}
+
+/* landing styling */
+.landing-row{
+    display: grid; 
+    grid-template-columns: 650px 1fr;
+    grid-gap: 30px;
+}
+
+.landing-row img{
+    width: 100%;
+}
+
+.landing-row div h1{
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.landing-row .btn a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* facts-row styling */
+.facts-row .facts-ul{
+    list-style: none;
+    width: 90%;
+    margin: 50px auto;
+    font-size: 20px;
+}
+
+/* images-row styling */
+.images-row .cat-container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    grid-gap: 10px;
+}
+
+.images-row .cat-container .random-cat-img{    
+    width: 100%;
+    height: 100%;
+}
+
+#cat-img-btn{    
+    margin: 30px auto;
+    display: block;
+} 
+/* about-row and contact-row titles's style*/
+.about-row .about-container .title, .contact-container .title{
+    margin-bottom: 60px;   
+}
+
+/* about-row styling*/
+.about-row .about-container{
+    width: 60%;
+    margin: 0px auto;
+    padding: 10px 50px; 
+    padding-bottom: 50px;        
+    box-shadow: 0 0 20px rgb(203, 201, 202);
+}
+
+/* contact-row */
 textarea{
-    width: 400px;
+    width: 80%;
+    height: 150px;
+    margin-top: 5px;
 }
 
-#contact-us{
-    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0, 0, 0, 0.35)), url("https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-size: auto;    
-    background-attachment: fixed;
+.contact-row{
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0, 0, 0, 0.35)), url("../images/contact-background.jpeg");
     background-position: center;
-    height: 100vh;      
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
-
-/* ==================================================== */
-/* content css end*/
-/* ==================================================== */
-
-
-/* ==================================================== */
-/* Responsible css*/
-/* ==================================================== */
-
-/* resizing for 900px window*/
-@media screen and (max-width: 990px){
-
-    #nav-links li a{      
-        font-size: 17px;
-    }
-
-    .facts-ul{
-        font-size: 18px;
-        margin: 30px auto;
-    }
-
-    #facts{
-        margin-bottom: 160px;
-    }
-
-    .container{
-        width: 70vw;
-        margin: 80px auto;
-    }
-
-    #main-phrase{
-        text-transform: uppercase; 
-        display: inline-block;
-    }        
-
-    #landing-img{
-        width: 90%;
-        float: left;
-    }    
-
-    .advantages-container{
-        margin: 50px auto;
-        display: grid;
-    }
-
-    .work-with-us-img{
-        width: 70vw;
-        height: 70vh;
-        margin: auto auto;
-    }
-    
-    .cat-img-container{
-        display: grid;
-    }
-
+.contact-container{
+    width: 50%;  
+    margin: 60px;   
+    padding: 20px 30px; 
+    padding-bottom: 80px;   
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(203, 201, 202);
+    background-color: white;     
+    background: rgba(235, 235, 235, .7);
 }
 
-/* resizing for 650px window*/
-@media screen and (max-width: 650px){
+.form-container .title{
+    margin: 30px;   
+}
 
-    #main-phrase{
-        font-size: 40px;
-    }      
+.form-container .form-group{
+    padding: 5px;
+    font-size: 25px;
+    display: inline-block;
+    width: 90%;
+}
+
+.form-container .form-group label{
+    width: 20%;
+    height: 30px;
+    display: block;
+}
+
+.form-container .form-group input{
+    width: 70%;
+    height: 35px;
+}
+
+.form-container .btn{
+    margin: 10px auto;
+    display: block;
+}
+
+/* advantages-row styling*/
+.advantages-row .advantages-container{
+    width: 90%;
+    margin: 10px auto;
+}
+
+.advantages-row .advantages-container ul{
+    list-style-type: none;
+}
+
+.advantages-row .advantages-container ul li p{
+    font-size: 25px;
+}
+.advantages-row .advantages-container ul li p i{
+    font-size: 28px;
+}
+
+/* footer */
+
+footer{
+    border: 1px solid rgb(233, 231, 232);  
+    font-size: 1.3rem;
+    display: flex;
+}
+
+footer p{
+    margin: 10px auto;
+}
+
+footer .fa{
+    font-size: 25px;
+    margin: 3px;
+}
+
+footer .fa-linkedin{
+    background-color: rgb(40,103,178);
+    color: white;
+}
+
+footer .fa-github{
+    color: black;
+}
+
+/* responsive */
+@media screen and (max-width: 768px){
 
     nav{
         position: relative;
     }
 
-    .hamburguer{
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-        z-index: 2;
-    }
-
     .line{
         width: 30px;
         height: 3px;
-        background: white;
+        background-color: white;
         margin: 5px;
     }
 
-    #nav-links{
-        position: fixed;
-        background: #A0D2DB;
+    .hamburguer{
+        position: absolute;
+        cursor: pointer;        
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 1;
+    }
+
+    /* a clip-path circle shaped, that starts out of the screen and fills it with the .open class */
+    .nav-links{
+        background-color: rgb(160, 212, 219);	  
         height: 100vh;
-        width: 100vh;
+        width: 100%;
         flex-direction: column;
-        clip-path: circle(100px at 90% -15%);
-        -webkit-clip-path: circle(100px at 90% -15%);
-        transition: all 0.5s ease-out;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
         pointer-events: none;
     }
 
-    #nav-links.open{        
+    .nav-links.open{
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
-    }
-
-    #nav-links li a{      
-        font-size: 30px;
-    }
+    }      
 }
-
-
-
-
-
