@@ -91,7 +91,7 @@ nav{
 /* landing styling */
 .landing-row{
     display: grid; 
-    grid-template-columns: 650px 1fr;
+    grid-template-columns: 60% 1fr;
     grid-gap: 30px;
 }
 
@@ -111,7 +111,6 @@ nav{
 
 /* facts-row styling */
 .facts-row .facts-ul{
-    list-style: none;
     width: 90%;
     margin: 50px auto;
     font-size: 20px;
@@ -120,16 +119,17 @@ nav{
 /* images-row styling */
 .images-row .cat-container{
     width: 90%;
-    margin: auto;
+    margin: auto;    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 250px 250px;
     grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .images-row .cat-container .random-cat-img{    
     width: 100%;
-    height: 100%;
+    height: 250px;
+    margin: 5px;
+
 }
 
 #cat-img-btn{    
@@ -215,18 +215,18 @@ textarea{
 }
 
 .advantages-row .advantages-container ul li p{
-    font-size: 25px;
+    font-size: 20px;
 }
 .advantages-row .advantages-container ul li p i{
-    font-size: 28px;
+    font-size: 22px;
 }
 
 /* footer */
-
 footer{
     border: 1px solid rgb(233, 231, 232);  
     font-size: 1.3rem;
     display: flex;
+    padding: 10px;
 }
 
 footer p{
@@ -247,9 +247,53 @@ footer .fa-github{
     color: black;
 }
 
-/* responsive */
+/* responsivity */
+@media screen and (max-width: 1050px){
+
+    /* nav */
+    .nav-links li a{
+        font-size: 30px;
+    }
+
+    /* landing */
+    .landing-row {             
+        grid-template-columns: 55% 1fr;
+        grid-gap: 20px;   
+    }   
+
+    .landing-row img{
+        height: 100%;
+    }
+
+    .landing-row div h1{
+        font-size: 65px;
+    }
+
+    /* about us */
+    .about-row .about-container {
+        width: 80%;
+    }
+
+    /* contact */
+    .contact-container {
+        width: 60%;
+    }
+
+    /* footer */
+    footer{
+        font-size: 15px;
+    }
+
+    footer .fa{
+        font-size: 20px;
+        margin: 3px;
+    }
+    
+}
+
 @media screen and (max-width: 768px){
 
+    /* navbar animation */
     nav{
         position: relative;
     }
@@ -287,4 +331,35 @@ footer .fa-github{
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
     }      
+
+    /* sections style */
+    /* landing */
+    .landing-row {
+        display: grid;        
+        grid-template-columns: 95%;
+        grid-template-rows: 350px 1fr;       
+        text-align:center;  
+        line-height: 60px;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+
+    /* common */
+    .title{
+        font-size: 30px;
+    }
+
+    /* contact */
+    .contact-container {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    /* advtanges */
+    .advantages-row .advantages-container ul li p {
+        font-size: 15px;
+    }
+
 }

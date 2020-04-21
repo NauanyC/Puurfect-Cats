@@ -94211,7 +94211,7 @@ hamburguer.addEventListener("click", () => {
 const getFact = async () => {    
 
     try{
-        var req = unirest("GET", "https://catfact.ninja/facts?limit=6");
+        var req = unirest("GET", "https://catfact.ninja/facts?limit=10");
         req.headers({
             "x-rapidapi-host": "brianiswu-cat-facts-v1.p.rapidapi.com",
             "x-rapidapi-key": "6ecd5f2c3emshd8043e16a4f97bbp1792dejsnccbddd4f6216"
@@ -94257,18 +94257,13 @@ const createImgElement = () => {
         content.appendChild(img);
     }
     catContainer.appendChild(content);
-    console.log("1");
 }
 
 createImgElement();
 
 /* function that fetches cat images */
-const getImage = async () => {      
-    
-    
-    console.log("2");
+const getImage = async () => {    
     const catImagesArr  = document.querySelectorAll(".random-cat-img");
-    console.log(catImagesArr[3]);
     const apiKey = "5d85bb8f-fdac-4b78-821a-44e6cef3483d";
         
     try{	
